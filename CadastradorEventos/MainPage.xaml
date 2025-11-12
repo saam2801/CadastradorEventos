@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastradorEventos.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Beige">
+
+    <VerticalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Label Text="Cadastrador de Eventos"
+                   Margin="10"/>
+        </HorizontalStackLayout>
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="Informações gerais: "/>
+                <Entry Placeholder="Nome do Evento"/>
+                <Entry Placeholder="Quantidade de convidados"/>
+                <Entry Placeholder="Preço da Entrada"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Frame>
+            <Grid ColumnDefinitions="*, *" 
+                  RowDefinitions="Auto, Auto">
+                <Label Text="Data do Evento: " Grid.Column="0" Grid.Row="0"/>
+                <DatePicker Grid.Column="0" Grid.Row="1"/>
+                <DatePicker Grid.Column="1" Grid.Row="1"/>
+            </Grid>
+        </Frame>
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="Local do Evento: "/>
+                <Picker BackgroundColor="{StaticResource Gray600}" ItemDisplayBinding="{Binding descricao}" x:Name="pck_Locais"></Picker>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
