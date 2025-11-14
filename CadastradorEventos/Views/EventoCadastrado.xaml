@@ -8,14 +8,29 @@
     <VerticalStackLayout>
         <Frame>
             <VerticalStackLayout>
-                <Label Text="Informações do Evento: " FontSize="Title"/>
-                <Label Text="Nome do evento: " FontSize="Subtitle"/>
+                <Frame BackgroundColor="Beige">
+                    <Label Text="Informações do Evento: " FontSize="Title"/>
+                </Frame>
 
+                <Label Text="Nome do evento: " FontSize="Subtitle"/>
+                <Label Text="{Binding NomeEvento}"/>
+                <Label Text="Quantidade de Pessoas" FontSize="Subtitle"/>
+                <Label Text="{Binding qtd_Convidados}"/>
                 <Label Text="Local:" FontSize="Subtitle"/>
                 <Label Text="{Binding descricao}"/>
-                <Label Text="Máximo de pessoas: "/>
-                <Label Text="{Binding MaximoPessoas}"/>
+                <Label Text="Preço da Entrada: " FontSize="Subtitle"/>
+                <Label Text="{Binding entradaPreco}"/>
+                <Frame>
+                    <Grid ColumnDefinitions="*, *" RowDefinitions="auto, auto">
+                        <Label Text="Data da festa: " Grid.Row="0"/>
+                        <Label Text="{Binding comecoFesta, StringFormat='{}{0:dd/MM/yyyy}'}" Grid.Row="1"/>
+                        <Label Text="Data do fim da festa: " Grid.Column="1"/>
+                        <Label Text="{Binding fimFesta, StringFormat='{}{0:dd/MM/yyyy}'}" Grid.Row="1" Grid.Column="1"/>
+
+                    </Grid>
+                </Frame>
             </VerticalStackLayout>
         </Frame>
+        <Button Style="{StaticResource Btn}" Text="Voltar" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

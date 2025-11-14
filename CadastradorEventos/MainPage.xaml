@@ -8,7 +8,10 @@
     <VerticalStackLayout>
         <HorizontalStackLayout HorizontalOptions="Center">
             <Label Text="Cadastrador de Eventos"
-                   Margin="10"/>
+                   Margin="10"
+                   FontFamily="Roboto_Slab"
+                   FontSize="Title"/>
+
         </HorizontalStackLayout>
         <Frame>
             <VerticalStackLayout>
@@ -22,8 +25,8 @@
             <Grid ColumnDefinitions="*, *" 
                   RowDefinitions="Auto, Auto">
                 <Label Text="Data do Evento: " Grid.Column="0" Grid.Row="0"/>
-                <DatePicker Grid.Column="0" Grid.Row="1"/>
-                <DatePicker Grid.Column="1" Grid.Row="1"/>
+                <DatePicker Grid.Column="0" Grid.Row="1" x:Name="dtpck_Inicio" DateSelected="dtpck_Inicio_DateSelected" Format="dd/MM/yyyy"/>
+                <DatePicker Grid.Column="1" Grid.Row="1" x:Name="dtpck_Fim" Format="dd/MM/yyyy"/>
             </Grid>
         </Frame>
         <Frame>

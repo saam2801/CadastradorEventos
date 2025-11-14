@@ -9,6 +9,6 @@ namespace CadastradorEventos.Models
     public class Locais
     {
         public String descricao { get; set; }
-        public int maximoPessoas { get; set; }
+
     }
 }

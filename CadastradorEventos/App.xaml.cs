@@ -8,22 +8,22 @@ namespace CadastradorEventos
             new Locais()
             { 
                 descricao = "Salão de Festas Elite",
-                maximoPessoas = 1000,
+                
             },
             new Locais()
             {
                 descricao = "Salão de Festas Premium",
-                maximoPessoas = 700,
+                
             },
             new Locais()
             { 
                 descricao = "Salão de Festas normal",
-                maximoPessoas = 500,
+                
             },
             new Locais()
             { 
                 descricao = "Salão de Festas Econômico",
-                maximoPessoas = 250,
+                
             }
         };
 

@@ -20,6 +20,7 @@
             </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontFamily" Value="Roboto_Slab"/>
             </Style>
             <Style TargetType="DatePicker">
                 <Setter Property="TextColor" Value="Black"/>
