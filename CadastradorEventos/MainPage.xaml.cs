@@ -13,6 +13,8 @@ namespace CadastradorEventos
             Propriedades = (App)Application.Current;
 
             pck_Locais.ItemsSource = Propriedades.lista_Locais;
+
+            dtpck_Fim.MinimumDate = dtpck_Inicio.Date;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

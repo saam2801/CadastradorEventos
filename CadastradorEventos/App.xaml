@@ -17,6 +17,7 @@
             <Style TargetType="Entry">
                 <Setter Property="PlaceholderColor" Value="{StaticResource Gray600}"/>
                 <Setter Property="Margin" Value="4"/>
+                <Setter Property="TextColor" Value="Black"/>
             </Style>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
