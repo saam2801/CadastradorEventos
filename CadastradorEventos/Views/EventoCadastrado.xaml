@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastradorEventos.Views.EventoCadastrado"
+             Title="Evento Cadastrado"
+             Shell.TitleColor="White"
+             BackgroundColor="Beige">
+    <VerticalStackLayout>
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="Informações do Evento: " FontSize="Title"/>
+                <Label Text="Nome do evento: " FontSize="Subtitle"/>
+
+                <Label Text="Local:" FontSize="Subtitle"/>
+                <Label Text="{Binding descricao}"/>
+                <Label Text="Máximo de pessoas: "/>
+                <Label Text="{Binding MaximoPessoas}"/>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

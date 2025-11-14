@@ -13,9 +13,9 @@
         <Frame>
             <VerticalStackLayout>
                 <Label Text="Informações gerais: "/>
-                <Entry Placeholder="Nome do Evento"/>
-                <Entry Placeholder="Quantidade de convidados"/>
-                <Entry Placeholder="Preço da Entrada"/>
+                <Entry Placeholder="Nome do Evento" x:Name="NomeEvnt"/>
+                <Entry Placeholder="Quantidade de convidados" x:Name="QtdCnvd"/>
+                <Entry Placeholder="Preço da Entrada" x:Name="PreçoEntrada"/>
             </VerticalStackLayout>
         </Frame>
         <Frame>
@@ -32,5 +32,6 @@
                 <Picker BackgroundColor="{StaticResource Gray600}" ItemDisplayBinding="{Binding descricao}" x:Name="pck_Locais"></Picker>
             </VerticalStackLayout>
         </Frame>
+        <Button Text="Avançar" Style="{StaticResource Btn}" Clicked="Button_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
